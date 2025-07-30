@@ -1,0 +1,48 @@
+
+#Division Operation Function	
+def division(a,b,s):
+	a = int(input())
+	b = int(input())
+	c = a/b
+	print(c)
+	
+	
+#Multiplication Operation Function
+def multiplication(a,b,s):
+	a = int(input())
+	b = int(input())
+	c = a*b
+	print(c)
+
+#Substraction Operation Function
+def substraction(a,b,s):
+	a = int(input())
+	b = int(input())
+	c = a-b
+	print(c)
+
+# Addition Operation function
+def addition(a,b,s):
+	a = int(input())
+	b = int(input())
+	c = a+b
+	print(c)
+	
+
+# Conditional statement for the calculator
+s = input("Enter the sign: ")
+if s == "+":
+		addition("a","b","s")
+elif s == "-":
+		substraction("a","b","s")
+elif s == "*":
+		multiplication("a","b","s")
+elif s == "/":
+		division("a","b","s")
+elif s == "end":
+		print("Thank you for using my calculator")
+else: 
+        print("Invalid input")
+			
+			
+		
