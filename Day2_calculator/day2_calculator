@@ -41,7 +41,7 @@ while True:
 
 		except ValueError:
 			print("Wrong Input")
-			continue
+		else:
 
 			if choice == "1":
 				
@@ -52,14 +52,13 @@ while True:
 				multiplication(a,b)
 			elif choice == "4":
 				division(a,b)
-			elif choice == "end":
-				print("Thank you for using my calculator")
+		finally:
 				nextcalculation =input("Do you want to continue(yes/no): ")
 				if nextcalculation == 'no':
 					break
 
-				else: 
-    		    print("Invalid input")
+			
+			
     		    
 			
 			
