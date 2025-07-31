@@ -1,48 +1,66 @@
 
 #Division Operation Function	
-def division(a,b,s):
-	a = int(input())
-	b = int(input())
+def division(a,b):
 	c = a/b
 	print(c)
 	
 	
 #Multiplication Operation Function
-def multiplication(a,b,s):
-	a = int(input())
-	b = int(input())
+def multiplication(a,b,):
 	c = a*b
 	print(c)
 
 #Substraction Operation Function
-def substraction(a,b,s):
-	a = int(input())
-	b = int(input())
+def substraction(a,b):
 	c = a-b
 	print(c)
 
 # Addition Operation function
-def addition(a,b,s):
-	a = int(input())
-	b = int(input())
+def addition(a,b):
 	c = a+b
 	print(c)
 	
 
 # Conditional statement for the calculator
-s = input("Enter the sign: ")
-if s == "+":
-		addition("a","b","s")
-elif s == "-":
-		substraction("a","b","s")
-elif s == "*":
-		multiplication("a","b","s")
-elif s == "/":
-		division("a","b","s")
-elif s == "end":
-		print("Thank you for using my calculator")
-else: 
-        print("Invalid input")
+#s = input("Enter the sign: ")
+print("This is a simple calculator")
+print("Enter the number 1 to Add")
+print("Enter the number 2 to Substract")
+print("Enter the number 3 to Multiply")
+print("Enter the number 4 to Divide")
+
+
+while True: 
+	choice= input("Enter the operation number: ")
+
+	if choice in {'1', '2', '3', '4'}:
+
+		try:
+			a =int(input("Enter the first Number:  "))
+			b= int(input("Enter the second Number:  "))
+
+		except ValueError:
+			print("Wrong Input")
+			continue
+
+			if choice == "1":
+				
+				addition(a,b)
+			elif choice == "2":
+				substraction(a,b)
+			elif choice == "3":
+				multiplication(a,b)
+			elif choice == "4":
+				division(a,b)
+			elif choice == "end":
+				print("Thank you for using my calculator")
+				nextcalculation =input("Do you want to continue(yes/no): ")
+				if nextcalculation == 'no':
+					break
+
+				else: 
+    		    print("Invalid input")
+    		    
 			
 			
 		
