@@ -1,7 +1,7 @@
 #App to check the strength of a password.
 
 #To create an empty dictionary
-checks ={}
+checks =[]
 
 
 
@@ -12,19 +12,19 @@ def inputpassword():
 	stringcharacter =len([w for w in p if not w.isalnum()])
 	if passwordlength > 5 and Uppercasecount > 2 and stringcharacter > 1:
 		print("Strong Password!")
-		checks["passwordcheck"] = "Strong password"
+		checks.append( "Strong password")
 	elif passwordlength > 5 and Uppercasecount > 1 and stringcharacter > 1:
 		print("Input upper case and special characters in your password!")
-		checks["passwordcheck"] = "Input upper case and special characters in your password"
+		checks.append("Input upper case and special characters in your password")
 	elif passwordlength > 5 and Uppercasecount > 2 and stringcharacter < 2:
 		print("Input special characters in your password!")
-		checks["passwordcheck"]= "Weak password"
+		checks.append("Weak password")
 	elif passwordlength < 5 and Uppercasecount > 2 and stringcharacter > 2:
 		print("Password length too short!")
-		checks["passwordcheck"] = "Password length too short"
+		checks.append( "Password length too short")
 	elif passwordlength < 5 and Uppercasecount < 2 and stringcharacter < 2:
 		print("Weak password")
-		checks["passwordcheck"] = "Weak Password"
+		checks.append("Weak Password")
 	
 		
 	
