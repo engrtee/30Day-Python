@@ -1,0 +1,13 @@
+from day2_calculator import addition,substraction,division,multiplication
+
+def test_addition():
+	assert addition(2,3) ==5
+	
+def test_substraction():
+	assert substraction(1,1) == 0
+	
+def test_multiplication():
+	assert multiplication(2,3) == 6
+	
+def test_division():
+	assert division(6,2) == 3
