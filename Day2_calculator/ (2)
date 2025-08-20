@@ -1,5 +1,4 @@
-import calculator as calculator
-from calculator import addition
+import calculator 
 
 def test_addition():
 	assert addition(2,3) ==5

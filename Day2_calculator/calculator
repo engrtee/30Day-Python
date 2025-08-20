@@ -2,22 +2,29 @@
 #Division Operation Function	
 def division(a,b):
 	c = a/b
+	return c
 	
 	
 	
 #Multiplication Operation Function
 def multiplication(a,b,):
 	c = a*b
+	return c
+	
 #	print(c)
 
 #Substraction Operation Function
 def substraction(a,b):
 	c = a-b
+	return c
+	
 #	print(c)
 
 # Addition Operation function
 def addition(a,b):
 	c = a+b
+	return c
+	
 #q	print(c)
 	
 
