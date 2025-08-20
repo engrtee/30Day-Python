@@ -15,8 +15,8 @@ def play_game():
 	a = randint(1,2)
 	for i in range(5):
 		#b =int(input())
-		data = request.get_json()
-		b =int(data.get('b'))
+		#data = request.get_json()
+		b =request.args.get('b', type =int)
 		if a == b:
 		  
 		  return jsonify(result = "Correct")
