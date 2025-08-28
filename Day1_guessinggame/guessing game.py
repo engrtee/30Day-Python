@@ -2,9 +2,9 @@
 from random import randint
 
 #This is the function to create a play game logic
-def play_game(b):
+def play_game(a,b):
 	
-	a = randint(1,12)	
+	
 
 #If statement to check if the a is equal to b.
 	if a == b:
@@ -17,22 +17,34 @@ def play_game(b):
 		print(txt)
 	else:
 		print("no number inputted")
-
-
-while True:
+		return b
 	
+
+count = 0
+failed_count = 0
+successful_count = 0
+while True:
+
 #Try catch exception to catch errors
 	try:
+		count +=1
+		a = randint(1,12)	
 		b =int(input("Enter a valid number: "))
 	except ValueError:
 		print("Input a valid number")
 	else:
 		print("Valid number inputted")
-		play_game(b)
+		play_game(a,b)
+		if a == b:
+			successful_count +=1
+		elif a < b or a > b:
+			failed_count += 1
 	finally:
 			c = input("Do you want to play again.yes/no: ")
 			if c == "no":
 				print("Thank you for playing this game")
+				usagestats = f"You played this game a total number of {count} times, you had {failed_count} unsuccessful attempts and {successful_count} successful attempts"
+				print(usagestats)
 				
 				break
 		
