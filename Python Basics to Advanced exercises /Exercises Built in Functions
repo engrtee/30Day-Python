@@ -1,0 +1,85 @@
+#30 Days of Python
+
+
+
+#------Day 2 - Built in Functions in Python----
+
+#Lesson 1
+#Declare multiple variables and assign a value to them
+first_name = "Tosin"
+country = "Nigeria"
+Age = 230
+
+#To print the variables
+print(first_name)
+print(country)
+print(Age)
+
+
+#multiple variables in a line
+first_name,Age,country = "Tolu",330,"Niger"
+
+print(first_name)
+print(country)
+print(Age)
+
+
+#Lesson 2 
+num_one = 4
+num_two = 5
+
+#multiplication
+print(num_one * num_two)
+
+#addition
+print(num_one + num_two)
+
+#Substraction
+print(num_one - num_two)
+
+#Division
+print(num_one / num_two)
+
+#modulo
+print(num_one % num_two)
+
+
+#2. The area of a circle when the radius is 30cm
+#Area = Pie * radius square
+radius = 30
+area_of_circle = 3.14 * radius ** 2
+print(area_of_circle)
+
+#ii. Utilizing the input
+radius = int(input("Enter the radius: "))
+area_of_circle = 3.14 * radius ** 2
+print(area_of_circle)
+
+
+
+#This is to print all python keywords
+#help('keywords')
+
+
+
+#------Day 3 Operators-----------
+#Logical Operators
+#Comparison Operators.
+#Assignment Operators: This is used to store a value in a variable
+#Arithmetic Operators
+
+
+
+
+
+dog ={}
+
+dog ={'name':['Rose','Billy'],'color':'Brown','breed': 'german shepherd'}
+
+print(dog['name'])
+
+dog['name'].pop() == 'Rose'
+
+print(dog['name'])
+
+NGRATU

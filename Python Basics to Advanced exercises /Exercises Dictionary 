@@ -1,0 +1,38 @@
+# Create an empty dictionary called dog
+dog = {}
+
+# Add name, color, breed, legs, age to the dog dictionary
+dog = {'name': 'Rose','color':'Red','breed':'German Shepherd','legs':'Two','Age':'33'}
+
+print(dog['Age'])
+
+# Create a student dictionary and add first_name, last_name, gender, age, marital status, skills, country, city and address as keys for the dictionary
+student = {'first_name': 'Tobi','last_name':'Ellis','marital status':'single','skills':'Test','Age':'33'}
+
+# Get the length of the student dictionary
+print(len(student))
+
+
+# Get the value of skills and check the data type, it should be a list
+values = student.values()
+print(values)
+
+
+# Modify the skills values by adding one or two skills
+student['last_name'] = 'Hackney'
+print(values)
+
+
+# Get the dictionary keys as a list
+keys = student.items()
+print(keys)
+
+
+# Get the dictionary values as a list
+# Change the dictionary to a list of tuples using items() method
+# Delete one of the items in the dictionary
+del (student['last_name'])
+print(keys)
+
+# Delete one of the dictionaries
+# 🎉 CONGRATULATIONS
